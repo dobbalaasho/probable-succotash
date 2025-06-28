@@ -3,165 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashok Dobbala | Java Full Stack Developer</title>
+  <title>Ashok Dobbala | Portfolio</title>
   <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      background: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      scroll-behavior: smooth;
     }
     header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.3em;
-      margin-top: 10px;
-    }
-    nav {
-      background: #ffffff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 10px 20px;
-      text-align: center;
-      position: sticky;
+      position: fixed;
       top: 0;
+      width: 100%;
+      background: white;
+      border-bottom: 1px solid #eee;
+      padding: 1rem 2rem;
       z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav a {
-      margin: 0 15px;
+    header nav a {
+      margin-left: 1.5rem;
       text-decoration: none;
       color: #333;
-      font-weight: bold;
+      font-weight: 500;
     }
-    nav a:hover {
-      color: #007bff;
+    .intro {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 1rem;
     }
-    .section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+    .intro h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .intro p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    section {
+      padding: 5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
     }
     h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 2rem;
       border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-      color: #2c3e50;
-    }
-    .skills span {
-      display: inline-block;
-      background: #e9ecef;
-      margin: 5px;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 0.9em;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
     }
     .project {
-      margin-bottom: 30px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
     }
-    .project-title {
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #007bff;
+    .project h3 {
+      margin-bottom: 0.3rem;
     }
     footer {
-      background: #343a40;
-      color: white;
       text-align: center;
-      padding: 30px 20px;
-      margin-top: 50px;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
     }
-    a {
-      color: #007bff;
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+      header nav {
+        margin-top: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Ashok Dobbala</h1>
-  <p>Java Full Stack Developer | Spring Boot | React | AWS</p>
+  <div><strong>Ashok Dobbala</strong></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="intro">
+  <h1>Hi, I'm Ashok Dobbala</h1>
+  <p>Java Full Stack Developer | Cloud Enthusiast | Tech Explorer</p>
+</div>
 
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>I’m a passionate Full Stack Developer with 10+ years of experience building scalable, secure, and high-performance web applications using Java, Spring Boot, React, and modern cloud-native tools like AWS and Docker. I enjoy solving real-world problems and constantly improving my skills through hands-on projects.</p>
+<section id="about">
+  <h2>About</h2>
+  <p>I am a Java Full Stack Developer with over 10 years of experience in building scalable enterprise solutions using Java, Spring Boot, REST APIs, Microservices, and front-end frameworks like React and Angular. I am passionate about clean code, performance, and solving real-world problems through software.</p>
 </section>
 
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Java</span>
-    <span>Spring Boot</span>
-    <span>REST APIs</span>
-    <span>React</span>
-    <span>Angular</span>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>AWS</span>
-    <span>Docker</span>
-    <span>Kubernetes</span>
-    <span>PostgreSQL</span>
-    <span>MySQL</span>
-  </div>
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Senior Java Developer</strong> – XYZ Corp (2020 - Present)</li>
+    <li><strong>Full Stack Developer</strong> – ABC Ltd (2015 - 2020)</li>
+    <li><strong>Software Engineer</strong> – DEF Inc. (2013 - 2015)</li>
+  </ul>
 </section>
 
-<section id="projects" class="section">
+<section id="projects">
   <h2>Projects</h2>
-
   <div class="project">
-    <div class="project-title">Personal Portfolio Website</div>
-    <p>Created a modern portfolio website (this one!) with responsive design using HTML/CSS and hosted on GitHub Pages.</p>
+    <h3>Cloud Inventory System</h3>
+    <p>Developed a full-stack solution for tracking assets using Spring Boot and Angular, deployed on AWS with CI/CD using Jenkins.</p>
+  </div>
+  <div class="project">
+    <h3>Healthcare Portal</h3>
+    <p>Created a HIPAA-compliant patient portal using React, Node.js, and MongoDB. Integrated role-based access and RESTful APIs.</p>
   </div>
 </section>
 
-<section id="certifications" class="section">
-  <h2>Certifications</h2>
-
-  <div class="project">
-    <div class="project-title">AWS Certified Cloud Practitioner</div>
-    <p>Credential ID: <a href="https://www.credly.com/badges/39003a09-96ec-435b-a5df-57c29e7f60af/linked_in_profile" target="_blank">View Certificate</a></p>
-  </div>
-
-  <div class="project">
-    <div class="project-title">Oracle Certified Java SE8 Programmer</div>
-    <p>Credential ID: <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=567660158FEBEB4F458A28BE3891B7FBA226C3FC8566925704FB3C4BD7B1E44C" target="_blank">View Certificate</a></p>
-  </div>
-</section>
-
-<section id="contact" class="section">
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:dobbalaashok969@gmail.com">dobbalaashok969@gmail.com</a></p>
-  <p>Phone: 734-956-0689</p>
-  <p>LinkedIn: <a href="linkedin.com/in/ashok-dobbala" target="_blank">linkedin.com/in/your-profile</a></p>
+  <p>Email: <a href="mailto:ashokdobbala53@gmail.com">ashokdobbala53@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/ashokdobbala" target="_blank">linkedin.com/in/ashokdobbala</a></p>
 </section>
 
 <footer>
-  <p>&copy; 2025 Ashok Dobbala. All rights reserved.</p>
+  &copy; 2025 Ashok Dobbala. All rights reserved.
 </footer>
 
 </body>
