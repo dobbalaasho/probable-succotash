@@ -1,80 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashok Dobbala | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
-  <nav>
-    <div class="nav-container">
-      <h3>Ashok</h3>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle">🌙</button>
-    </div>
-  </nav>
-
-  <section id="home">
-    <div class="hero">
-      <h1>Hi, I'm Ashok Dobbala</h1>
-      <p>Java Full Stack Developer | Cloud Enthusiast</p>
+  <section class="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Ashok Dobbala</span></h1>
+        <p>Java Full Stack Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-illustration">
+        <img src="assets/illustration.svg" alt="Developer Illustration" />
+      </div>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm a passionate software engineer with 10+ years experience building scalable full stack applications using Java, Spring Boot, React, and cloud-native tools.</p>
+    <p>I’m a passionate Java Full Stack Developer with over 10 years of experience building web and cloud-based applications.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <ul>
-      <li><i class="fab fa-java"></i> Java</li>
-      <li><i class="fab fa-react"></i> React</li>
-      <li><i class="fab fa-aws"></i> AWS</li>
-      <li><i class="fas fa-database"></i> SQL / Oracle</li>
-      <li><i class="fab fa-docker"></i> Docker</li>
-      <li><i class="fab fa-git-alt"></i> Git</li>
+    <ul class="skills-list">
+      <li>Java, Spring Boot, Microservices</li>
+      <li>React, Angular, HTML, CSS, JavaScript</li>
+      <li>AWS, Docker, Kubernetes, Jenkins</li>
+      <li>SQL, PostgreSQL, MongoDB</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Inventory Management App</h3>
-      <p>Built using Spring Boot and React, deployed on AWS EC2 with Docker containers.</p>
-    </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>Static personal site built with HTML/CSS/JS and hosted using GitHub Pages.</p>
-    </div>
-  </section>
-
-  <section id="experience">
+  <section id="experience" data-aos="fade-up">
     <h2>Experience</h2>
-    <p><strong>Senior Java Developer</strong> - XYZ Corp (2021–Present)</p>
-    <p><strong>Full Stack Developer</strong> - ABC Solutions (2016–2021)</p>
+    <p><strong>Senior Java Full Stack Developer</strong> - XYZ Corp (2018 - Present)</p>
+    <p>Led development of enterprise-level applications with microservice architecture and modern frontend frameworks.</p>
   </section>
 
-  <section id="education">
+  <section id="education" data-aos="fade-up">
     <h2>Education</h2>
-    <p>Bachelor of Engineering in Computer Science – XYZ University (2015)</p>
+    <p><strong>Bachelor of Engineering in Computer Science</strong></p>
+    <p>ABC University, 2015</p>
   </section>
 
-  <section id="certifications">
+  <section id="certifications" data-aos="fade-up">
     <h2>Certifications</h2>
     <ul>
       <li>AWS Certified Cloud Practitioner</li>
@@ -82,27 +59,18 @@
     </ul>
   </section>
 
-  <section id="resume">
+  <section id="resume" data-aos="fade-up">
     <h2>Resume</h2>
-    <a class="btn" href="resume.pdf" download>Download Resume</a>
+    <a href="assets/Ashok_Dobbala_Resume.pdf" class="btn" download>Download Resume</a>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> ashokdobbala53@gmail.com</p>
-    <p><i class="fas fa-phone"></i> 814-812-9929</p>
-    <p><i class="fab fa-linkedin"></i> <a href="#">LinkedIn Profile</a></p>
+    <p>Email: ashokdobbala53@gmail.com</p>
   </section>
-
-  <footer>
-    <p>© 2025 Ashok Dobbala. All rights reserved.</p>
-  </footer>
 
   <script>
-    const toggle = document.getElementById('theme-toggle');
-    toggle.onclick = () => {
-      document.body.classList.toggle('dark-mode');
-    };
+    AOS.init();
   </script>
 </body>
 </html>

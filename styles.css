@@ -1,0 +1,87 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: linear-gradient(-45deg, #93c5fd, #bfdbfe, #fcd34d, #f87171);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding: 60px 0;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.hero-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-illustration img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+.skills-list li {
+  background: #f1f5f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card {
+  background: #e5e7eb;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
